@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/colorBackground"
+    tools:context="com.virtuooza.samir.touchme.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- image preview -->
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="bottom" />
+
+        <!-- prop images -->
+        <ImageView
+            android:id="@+id/santaHat"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/santashat" />
+
+        <ImageView
+            android:id="@+id/mustache"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mustache" />
+
+        <ImageView
+            android:id="@+id/sunglasses"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/sunglasses" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frame"
+        android:layout_alignEnd="@+id/frame"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="openImage"
+        android:src="@drawable/ic_action_name"
+        app:srcCompat="@color/colorAccent" />
+
+</RelativeLayout>
